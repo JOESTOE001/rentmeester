@@ -1,0 +1,48 @@
+---
+const services = [
+    {
+        title: "Vastgoedbeheer",
+        description: "Professioneel beheer van uw vastgoedportefeuille met focus op waardebehoud en optimalisatie",
+        icon: "🏘️",
+        color: "bg-emerald-50"
+    },
+    {
+        title: "Taxaties",
+        description: "Gecertificeerde taxaties van landelijk vastgoed, landbouwgrond en natuurterreinen",
+        icon: "📊",
+        color: "bg-green-50"
+    },
+    {
+        title: "Pachtbeheer",
+        description: "Deskundig beheer en administratie van pachtovereenkomsten en -relaties",
+        icon: "🌾",
+        color: "bg-lime-50"
+    },
+    {
+        title: "Advisering",
+        description: "Strategisch advies over aan- en verkoop, ontwikkeling en beheer van vastgoed",
+        icon: "💡",
+        color: "bg-emerald-50"
+    }
+];
+---
+<section id="diensten" class="py-24 bg-white">
+    <div class="container">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold mb-6">Onze Expertise</h2>
+            <p class="text-gray-600 text-lg">
+                Wij bieden een compleet pakket aan diensten voor het beheer van uw landelijk vastgoed
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map(service => (
+                <div class={`${service.color} p-8 rounded-2xl hover:scale-105 transition-transform duration-300`}>
+                    <div class="text-5xl mb-6">{service.icon}</div>
+                    <h3 class="text-2xl font-semibold mb-4">{service.title}</h3>
+                    <p class="text-gray-600">{service.description}</p>
+                </div>
+            ))}
+        </div>
+    </div>
+</section> 

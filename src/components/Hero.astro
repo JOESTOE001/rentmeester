@@ -1,0 +1,49 @@
+---
+---
+<section class="relative min-h-screen">
+    <!-- Background image with overlay -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="/images/hero-bg.jpg" 
+            alt="Landelijk gebied" 
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="relative z-10 py-6">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-white text-2xl font-bold">RENTMEESTER</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#diensten" class="text-white hover:text-green-300">Diensten</a>
+                    <a href="#over-ons" class="text-white hover:text-green-300">Over Ons</a>
+                    <a href="#contact" class="text-white hover:text-green-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero content -->
+    <div class="relative z-10 container h-[calc(100vh-5rem)] flex items-center">
+        <div class="max-w-2xl">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                Uw partner in vastgoedbeheer
+            </h1>
+            <p class="text-xl text-white/90 mb-8">
+                Professioneel beheer van uw landelijk vastgoed met meer dan 25 jaar ervaring
+            </p>
+            <div class="flex gap-4">
+                <a href="#contact" 
+                   class="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                    Contact opnemen
+                </a>
+                <a href="#diensten" 
+                   class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors">
+                    Onze diensten
+                </a>
+            </div>
+        </div>
+    </div>
+</section> 
